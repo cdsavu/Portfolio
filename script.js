@@ -29,3 +29,30 @@ const skills = ["Desire for learning","C#", "SQL","Javascript","HTML","CSS"];
 skills.forEach(function (skill){
     console.log(skill)
 });
+skills.push("Javascript");
+console.log(skills);
+
+// const project = {
+//     name : "ITP Library Management",
+//     description : "An API written in C# using Swagger as the way to access endpoints",
+//     year : 2022
+// }
+// console.log(project.name);
+
+const projects = [
+    {
+        name:"ITP Library Management",
+        year:2022
+    },
+    {
+        name:"Clear",
+        year:2023
+    },
+    {
+        name:"Inventory",
+        year:2024
+    }
+];
+projects.forEach(function(project){
+    console.log(project.name);
+});
