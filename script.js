@@ -56,3 +56,7 @@ const projects = [
 projects.forEach(function(project){
     console.log(project.name);
 });
+
+const heading = document.querySelector("h1");
+heading.textContent ="I'm kinda tired tonight but I'll get something done still";
+heading.style.color = "red";
