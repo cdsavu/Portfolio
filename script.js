@@ -32,12 +32,12 @@ skills.forEach(function (skill){
 skills.push("Javascript");
 console.log(skills);
 
-// const project = {
-//     name : "ITP Library Management",
-//     description : "An API written in C# using Swagger as the way to access endpoints",
-//     year : 2022
-// }
-// console.log(project.name);
+const project = {
+    name : "ITP Library Management",
+    description : "An API written in C# using Swagger as the way to access endpoints",
+    year : 2022
+}
+console.log(project.name);
 
 const projects = [
     {
@@ -58,5 +58,9 @@ projects.forEach(function(project){
 });
 
 const heading = document.querySelector("h1");
-heading.textContent ="I'm kinda tired tonight but I'll get something done still";
-heading.style.color = "red";
+
+const button = document.querySelector("#green-btn");
+button.addEventListener("click",function(){
+    heading.textContent ="Hello there!";
+    console.log("Button was clicked!");
+})
