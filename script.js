@@ -64,3 +64,22 @@ button.addEventListener("click",function(){
     heading.textContent ="Hello there!";
     console.log("Button was clicked!");
 })
+
+async function getPost(){
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+    const jsonResponse = await response.json();
+    console.log(jsonResponse);
+    console.log(jsonResponse.title);
+}
+
+getPost();
+
+async function getPosts(){
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const data = await response.json();
+    data.forEach(function(object){
+        console.log(object.title);
+    })
+}
+
+getPosts();
